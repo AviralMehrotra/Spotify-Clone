@@ -40,7 +40,7 @@ To run the application locally, follow these steps:
    - Add `http://localhost:3000/` (or your production URL) as a Redirect URI in the Spotify Dashboard.
 
 2. Configure Client ID:
-   - In the `Login.js` file, replace `clientId` with your Spotify Client ID.
+   - In the `Login.jsx` file, replace `clientId` with your Spotify Client ID.
 
 3. Run the application:
    ```
