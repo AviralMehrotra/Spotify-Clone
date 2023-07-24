@@ -12,7 +12,8 @@
     "react-icons": "^4.10.1",
     "react-scripts": "5.0.1",
     "styled-components": "^6.0.4",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.7"
   },
   "scripts": {
     "start": "react-scripts start",
