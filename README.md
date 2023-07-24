@@ -1,5 +1,3 @@
-# Spotify Clone
-
 <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_White.png" alt="Spotify Clone" width="200" />
 
 A Spotify clone built using React and Styled Components that allows users to log in with their Spotify account and access various features like reading email, private playlists, and more.<br><br>
