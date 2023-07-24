@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Spotify Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_White.png" alt="Spotify Clone" width="200" />
 
-## Available Scripts
+A Spotify clone built using React and Styled Components that allows users to log in with their Spotify account and access various features like reading email, private playlists, and more.<br><br>
+<strong>Note</strong>: To take the complete advantage of this Spotify Clone you need to have [Spotify Premium](https://www.spotify.com/in-en/premium/). 
 
-In the project directory, you can run:
+## Demo
+<a href="https://spotifyclone-aviral.netlify.app/">
+<img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"/>
+</a>
 
-### `npm start`
+## Features
+- Login with Spotify account.
+- Access user information (email, private playlists, etc.).
+- Play/Pause Music, Next and Previous
+- Volume Slider
+- Access to all your playlists 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
+To run the application locally, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:
+   ```
+   git clone https://github.com/AviralMehrotra/Spotify-Clone.git
+   ```
 
-### `npm test`
+2. Change into the project directory:
+   ```
+   cd Spotify-Clone
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Install dependencies:
+   ```
+   npm install
+   ```
 
-### `npm run build`
+## Usage
+1. Obtain your Spotify Client ID:
+   - Go to the Spotify Developer Dashboard: https://developer.spotify.com/dashboard/
+   - Create a new application to get your Client ID.
+   - Add `http://localhost:3000/` (or your production URL) as a Redirect URI in the Spotify Dashboard.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Configure Client ID:
+   - In the `Login.js` file, replace `clientId` with your Spotify Client ID.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Run the application:
+   ```
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Open your web browser and navigate to `http://localhost:3000/` to access the application.
 
-### `npm run eject`
+## Technologies Used
+- React
+- Styled Components
+- React Icons
+- Axios
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributing
+Contributions are welcome! If you find any issues or have improvements to suggest, please create an issue or submit a pull request.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Fork the repository.
+2. Create your feature branch: `git checkout -b feature/my-new-feature`.
+3. Commit your changes: `git commit -m 'Add some feature'`.
+4. Push to the branch: `git push origin feature/my-new-feature`.
+5. Submit a pull request.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is licensed under the [MIT License](LICENSE).
