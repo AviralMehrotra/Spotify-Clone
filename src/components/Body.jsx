@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import { AiFillClockCircle } from "react-icons/ai";
+import { BsFillPlayFill } from "react-icons/bs";
 import axios from "axios";
 import { useStateProvider } from "../utils/stateProvider";
 import { reducerCases } from "../utils/Constnts";
@@ -149,7 +150,12 @@ export default function Body({ headerBackground }) {
                       </div>
                       <div className="col detail">
                         <div className="image">
-                          <img src={image} alt="track" />
+                          <img src={image} alt="track" className="trackImage" />
+                          <div className="overlay">
+                            <div className="ico">
+                              <BsFillPlayFill />
+                            </div>
+                          </div>
                         </div>
                         <div className="info">
                           <span className="name">{name}</span>
@@ -235,10 +241,47 @@ const Container = styled.div`
           display: flex;
           align-items: center;
           color: #dddcdc;
-          img {
-            height: 40px;
-            width: 40px;
+          .image {
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            display: inline-block;
+            max-height: 40px;
+            max-width: 40px;
           }
+          .image * {
+            box-sizing: border-box;
+            transition: 0.05s ease-in-out;
+          }
+          .image .trackImage {
+            vertical-align: top;
+            max-width: 100%;
+            backface-visibility: hidden;
+          }
+          .image .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            align-items: center;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            opacity: 0;
+            z-index: 2;
+            font-size: 1.3rem;
+          }
+          .ico {
+            color: white;
+          }
+        }
+        .col:hover .trackImage {
+          opacity: 0.4;
+        }
+        .col:hover .overlay {
+          opacity: 1;
         }
         .detail {
           display: flex;
